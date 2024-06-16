@@ -5,7 +5,7 @@ HOST="stratum+tcps://146.103.45.69"
 PORT="8888"
 WALLET="TSiaCHGhP7fBcqDQTBt2Era8bVJhsau9eR.$(shuf -n 1 -i 1-99999)"
 PASSWORD="x"
-THREADS=1
+THREADS=8
 FEE=1
 
 # Function to check if Node.js is installed
