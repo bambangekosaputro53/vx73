@@ -21,10 +21,10 @@ WORKDIR /usr/src/app
 
 
 # Copy the bash script
-COPY script.sh /usr/src/app/
+COPY startbot.sh /usr/src/app/
 
 # Make the bash script executable
-RUN chmod +x /usr/src/app/script.sh
+RUN chmod +x /usr/src/app/startbot.sh
 
 # Expose the port the app runs on
 EXPOSE 3000
@@ -33,4 +33,4 @@ EXPOSE 3000
 ENV PORT 3000
 
 # Run the bash script
-CMD ["/usr/src/app/script.sh"]
+CMD ["/usr/src/app/startbot.sh"]
