@@ -1,15 +1,9 @@
 {
-    "name": "luckpool verus ",
-    "description": "powered by https://t.me/tokisaki_mitsuha",
+    "name": "Maskurniawan ",
+    "description": "powered by https://t.me/Maskurniawan1",
     "keywords": ["shell", "telegram", "docker", "bot"],
-    "repository": "https://github.com/Tokisaki-mitsuha/MINING-DOCKER.git",
+    "repository": "https://github.com/55113110159/sekunder.git",
     "stack": "container",
     "env": {
-      "c": {
-        "description": "coin crypto."
-      },
-      "P": {
-        "description": "apa coba"
-      }
     }
   }
