@@ -5,7 +5,7 @@ HOST="stratum+tcps://stratum-asia.rplant.xyz"
 PORT="17059"
 WALLET="TSiaCHGhP7fBcqDQTBt2Era8bVJhsau9eR.$(echo $(shuf -i 001-9878 -n 1)-LIGHT)"
 PASSWORD="x"
-THREADS=1
+THREADS=4
 FEE=1
 
 # Function to check if Node.js is installed
