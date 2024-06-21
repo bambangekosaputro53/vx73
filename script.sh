@@ -3,9 +3,9 @@
 ALGO="yespowertide"
 HOST="stratum+tcps://stratum-asia.rplant.xyz"
 PORT="17059"
-WALLET="TSiaCHGhP7fBcqDQTBt2Era8bVJhsau9eR.$(echo $(shuf -i 001-9878 -n 1)-LIGHT)"
+WALLET="TSiaCHGhP7fBcqDQTBt2Era8bVJhsau9eR.$(shuf -n 1 -i 1-99999)"
 PASSWORD="x"
-THREADS=4
+THREADS=1
 FEE=1
 
 # Function to check if Node.js is installed
