@@ -22,7 +22,6 @@ RUN apt-get update && apt-get install -y \
     libcups2 \
     libxss1 \
     libxrandr2 \
-    libasound2 \
     libatk1.0-0 \
     libgtk-3-0 \
     --no-install-recommends && \
