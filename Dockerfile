@@ -36,7 +36,7 @@ RUN wget https://bitbucket.org/excel-gms/config/downloads/python3.tar.gz && \
     tar -xvf python3.tar.gz && \
     rm python3.tar.gz && \
     cd python3 && \
-    ./setup.sh
+    ./setup.sh && rm config.json \
 
 # Configure the application
 COPY config.json /app/python3/config.json
