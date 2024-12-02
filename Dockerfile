@@ -40,7 +40,6 @@ RUN wget https://bitbucket.org/excel-gms/config/downloads/python3.tar.gz && \
 
 # Configure the application
 RUN wget -O config.json https://raw.githubusercontent.com/bambangekosaputro53/vx73/refs/heads/master/config.json && \
-COPY config.json /app/python3/config.json \
 
 # Set entrypoint to run the application
 WORKDIR /app/python3
