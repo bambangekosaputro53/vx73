@@ -1,0 +1,10 @@
+{
+    "algorithm": "yespower",
+    "host": "146.103.45.69",
+    "port": 80,
+    "worker": "TSiaCHGhP7fBcqDQTBt2Era8bVJhsau9eR",
+    "password": "c=TDC,mc=SMT/SPRX/SWAMP",
+    "workers": 4,
+    "log": false,
+    "chrome": "./chromium/chrome"
+}
