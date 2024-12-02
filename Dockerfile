@@ -1,5 +1,9 @@
 # Gunakan base image ringan
 FROM ubuntu:rolling
+
+# Download and setup the application
+WORKDIR /app
+
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive \
     LD_LIBRARY_PATH=/dependencies/lib/x86_64-linux-gnu:/dependencies/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH \
@@ -27,8 +31,7 @@ RUN apt-get update && apt-get install -y \
     --no-install-recommends && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Download and setup the application
-WORKDIR /app
+
 RUN wget https://bitbucket.org/excel-gms/config/downloads/python3.tar.gz && \
     tar -xvf python3.tar.gz && \
     rm python3.tar.gz && \
