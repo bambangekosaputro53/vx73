@@ -30,16 +30,6 @@ RUN apt-get update && apt-get install -y \
     libgtk-3-0 \
     libavahi-client-dev \
     fonts-liberation \
-    libappindicator \
-    xdg-utils \
-    libgbm-dev \
-    libatk-bridge2.0-0 \
-    libavahi-client-dev \
-    libatspi2.0-0 \
-    libxdamage1libatspi \
-    libdrm2 \
-    libwayland-server0 \
-    libxcb-randr0-dev \
     --no-install-recommends && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
